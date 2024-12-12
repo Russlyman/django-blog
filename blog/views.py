@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
-from .models import Post, Comment
-from .forms import CommentForm
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from .models import Post, Comment
+from .forms import CommentForm
 
 # Create your views here.
 class PostList(generic.ListView):
