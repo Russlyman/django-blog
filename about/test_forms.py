@@ -16,7 +16,7 @@ class TestCollaborateForm(TestCase):
     def test_form_name_required(self):
         """ Test for all fields"""
         form = CollaborateRequestForm({
-            'name': 'test',
+            'name': '',
             'email': 'test@test.com',
             'message': 'Hello!'
         })
